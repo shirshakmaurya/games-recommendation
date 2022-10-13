@@ -1,0 +1,39 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  body {
+    border: solid;
+    padding: 20px;
+    border-color: #6e85b7;
+  }
+  button {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem 0.3rem;
+  }
+  button:hover {
+    background-color: #6e85b7;
+  }
+  
+  hr {
+    border: 2px solid #6e85b7;
+  }
+  #display {
+    align-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+  }
+  #display-list {
+    list-style: none;
+    padding: 1rem;
+    border: 1px solid #6e85b7;
+    width: 100%;
+    margin: 1rem 0rem;
+    border-radius: 0.5rem;
+  }
+  
