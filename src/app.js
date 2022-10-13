@@ -5,20 +5,44 @@ var colorMain = "#6E85B7";
 
 const gameDB = {
   story: [
-    { name: "GTA 5", rating: "10/10" },
-    { name: "GTA Vice city", rating: "7/10" },
-    { name: "Far Cry", rating: "6/10" }
+    {
+      name: "GTA 5",
+      description: "A rockstar game launched in 2013",
+      rating: "10/10"
+    },
+    {
+      name: "GTA Vice city",
+      description: "A rockstart game launched in 2002",
+      rating: "7/10"
+    },
+    {
+      name: "Far Cry",
+      description: "Developed by Crytek and launched in 2004",
+      rating: "6/10"
+    }
   ],
 
   action: [
-    { name: "Call of Duty", rating: "8/10" },
-    { name: "Counter Strike", rating: "8/10" },
-    { name: "God of War", rating: "8/10" }
+    {
+      name: "Call of Duty",
+      description: "First person shooter game developed by Activision.",
+      rating: "8/10"
+    },
+    {
+      name: "Counter Strike",
+      description: "Multiplayer tactical first-person shooter game",
+      rating: "8/10"
+    },
+    {
+      name: "Halo",
+      description: "Military science fiction game.",
+      rating: "8/10"
+    }
   ],
   sports: [
-    { name: "FIFA", rating: "8/10" },
-    { name: "Cricked 07", rating: "8/10" },
-    { name: "WWE 2K22", rating: "8/10" }
+    { name: "FIFA", description: "Football game", rating: "8/10" },
+    { name: "Cricket", description: "Cricket game", rating: "8/10" },
+    { name: "WWE 2K22", description: "A Fighting game", rating: "8/10" }
   ]
 };
 
@@ -47,6 +71,7 @@ export default function App() {
             <li id="display-list" key={game.name}>
               {" "}
               <div style={{ fontSize: "larger" }}> {game.name} </div>
+              <div style={{ fontSize: "meduim" }}> {game.description} </div>
               <div style={{ fontSize: "smaller" }}> {game.rating} </div>
             </li>
           ))}
